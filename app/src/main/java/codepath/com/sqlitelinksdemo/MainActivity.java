@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSubmit(View view) {
-        TextView etURL = (TextView) findViewById(R.id.etURL);
+        EditText etURL = (EditText) findViewById(R.id.etURL);
         String url = etURL.getText().toString();
         if(!TextUtils.isEmpty(url)) {
             ImageLoaderLibrary.load(url, imageView);
